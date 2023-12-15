@@ -1,0 +1,29 @@
+{% include "header.html" %}
+<br />
+<br />
+<h1 style="text-align: center">Marks Calculator</h1>
+<br />
+<div class="container">
+  <center>
+    <form class="container-fuild w-50" method="POST">
+      {% csrf_token %}
+      <label>Subject 1</label>
+      <input type="text" name="s1" class="form-control" />
+      <label>Subject 2</label>
+      <input type="text" name="s2" class="form-control" />
+      <label>Subject 3</label>
+      <input type="text" name="s3" class="form-control" />
+      <label>Subject 4</label>
+      <input type="text" name="s4" class="form-control" />
+      <label>Subject 5</label>
+      <input type="text" name="s5" class="form-control" />
+      <input type="submit" class="btn btn-info mt-2 mb-2" value="Marklist" />
+      <br />
+      <label>Total</label>
+      <input type="text" name="total" class="form-control" value="{{total}}" />
+      <label>Percentage</label>
+      <input type="text" name="per" class="form-control" value="{{per}}" />
+    </form>
+  </center>
+</div>
+{% include "footer.html" %}

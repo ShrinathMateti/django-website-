@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Dynamiics</title>
+    <link
+      rel="icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/294_Servicestack_logo-512.png"
+    />
+  </head>
+  <body>
+    {% include "header.html" %} {% comment %} Wscubetech Training Institute in
+    Jaipur {% endcomment %}
+    <br />
+    <br />
+    <h4 style="text-align: center">CONTACT US</h4>
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <br />
+          <img
+            src="https://st.depositphotos.com/1011643/2019/i/450/depositphotos_20191151-happy-female-office-worker-talking-on-landline-phone.jpg"
+            class="image-center"
+            height="80%"
+          />
+        </div>
+        <div class="col-md-6">
+          <center>
+            <form
+              class="container-fuild w-60"
+              method="POST"
+              action="{% url 'contact' %}"
+            >
+              {% csrf_token %}
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter Your Name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Enter Your Email Address"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Your Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="5"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-info" onclick="myFunction()">
+                Submit
+              </button>
+            </form>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h4 class="text-center">&nbsp;OUR ADDRESS</h4>
+      <div class="row">
+        <div class="col-md-6 mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15206.951807775713!2d75.92165778865356!3d17.662566051190176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5da6653291859%3A0xd47326b753a0a42e!2sDatta%20Nagar%2C%20Sakhar%20Peth%2C%20Solapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1694412301378!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="col-md-6 mt-5">
+          <br />
+          <img
+            src="https://1.bp.blogspot.com/-gC72oezFqUU/Xh9y4aTtIkI/AAAAAAAAAAU/2Tl_66ha8XgyrPBoanW9YchSVhbOKvg3gCLcBGAsYHQ/w680/images%2B%25281%2529.jpeg"
+            height="350px"
+            width="80%"
+          />
+          <h4 class="text-center">Locate Us Here</h4>
+          <p class="text-center text-dark">
+            Elm Street, Apt 7B, Solapur, 12345
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    {% include "footer.html" %}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction() {
+        alert("Our Team Will Contact You!");
+      }
+    </script>
+  </body>
+</html>

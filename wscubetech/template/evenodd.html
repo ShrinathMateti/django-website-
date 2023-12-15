@@ -1,0 +1,30 @@
+{% include "header.html" %}
+<br />
+<br />
+<h1 style="text-align: center">Even Odd Checker</h1>
+<br />
+<div class="container">
+  <center>
+    <form class="container-fuild w-50" method="POST">
+      {% csrf_token %}
+      <label>Number</label>
+      <input type="text" name="n1" class="form-control" />
+      {% if error %}
+      <div class="alert alert-danger" role="alert">Please Enter A Number</div>
+      {% endif %} {% comment %}
+      <button type="submit" class="btn btn-info mt-2 mb-2">Even | Odd</button>
+      {% endcomment %}
+
+      <input type="submit" class="btn btn-info mt-2 mb-2" value="Show Output" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Output"
+        value="{{c}}"
+      />
+    </form>
+  </center>
+</div>
+<br />
+<br />
+{% include "footer.html" %}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Dynamiics</title>
+    <link
+      rel="icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/294_Servicestack_logo-512.png"
+    />
+    <style>
+      #a{
+        margin-left:210px;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "header.html" %}
+    <br />
+    <br />
+    <h3 style="text-align: center">Andriod App Development</h3>
+    <div class="container mt-5 mb-4">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://www.w2ssolutions.com/blog/wp-content/uploads/2019/10/native-application-development.png"
+            alt=""
+          />
+          <h5 class="text-center">Native App Development</h5>
+        </div>
+        <div class="col-md-6 mt-5">
+          <p class="text-dark">
+            Native app development is the process of creating mobile applications that are specifically developed for a particular platform or device. Native apps are built using programming languages and development tools that are specific to the platform, such as Objective-C or Swift for iOS apps, or Java and Kotlin for Android apps. 
+          </p>
+          <a class="btn btn-info" id="a" href="{% url 'contact' %}"
+            >View Native App Templates</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-4">
+      <div class="row">
+        <div class="col-md-6">
+          <br />
+          <p class="text-dark mt-5">
+            Our custom app development service leverage the latest technologies to create tailored solutions that meet your unique business needs. Our experienced team of developers follows a comprehensive approach, which starts with understanding your business, identifying your goals, and analyzing your requirements. 
+          </p>
+          <a class="btn btn-info" id="a" href="{% url 'contact' %}"
+            >View Custom App Options</a
+          >
+        </div>
+        <div class="col-md-6 mt-4">
+          <img
+            src="https://www.finesofttechnologies.com/wp-content/uploads/2019/04/Custom-Application-Development.jpg"
+            alt=""
+          />
+          <h5 class="text-center">Custom App Options</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://nmgprod.s3.amazonaws.com/media/files/00/f2/00f2634736ffd06a963e5a119dca0861/cover_image.jpg.760x400_q85_crop_upscale.jpg"
+            alt=""
+          />
+          <h5 class="text-center">Cost Economic App Development</h5>
+        </div>
+        <div class="col-md-6 mt-5">
+          <p class="text-dark">
+            Our cost-economic app development service specializes in delivering high-quality mobile apps at an affordable price. Our skilled team of developers use the latest software and frameworks to create custom-built mobile solutions tailored to your specific business needs. With our agile development methodology, we ensure quick turn-around times without sacrificing quality.
+          </p>
+          <a class="btn btn-info" id="a" href="{% url 'contact' %}"
+            >View Pricing Options</a
+          >
+        </div>
+      </div>
+    </div>
+    <center>
+      <button
+        class="btn text-light"
+        style="background-color: black"
+        data-bs-toggle="modal" data-bs-target="#exampleModal"
+        type="button"
+      >
+        <i class="fa-regular fa-envelope me-2"></i></fa-regular>
+        Download Brochure
+    </button>
+    </center>
+    <br/>
+    {% include "footer.html"%}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

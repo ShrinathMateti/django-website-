@@ -1,0 +1,36 @@
+{% include "header.html" %}
+<br />
+<br />
+<h1 style="text-align: center">Calculator</h1>
+<br />
+<div class="container">
+  <center>
+    <form class="container-fuild w-50" method="POST">
+      {% csrf_token %}
+      <label>Value 1</label>
+      <input type="text" name="n1" class="form-control" />
+      <label>Operator</label>
+      <select name="op" class="form-control">
+        <option value="Select Operator">Select Operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <label>Value 2</label>
+      <input type="text" name="n2" class="form-control" />
+
+      <input type="submit" class="btn btn-info mt-2 mb-2" value="Calculate" />
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Output"
+        value="{{c}}"
+      />
+    </form>
+  </center>
+</div>
+<br />
+<br />
+{% include "footer.html" %}

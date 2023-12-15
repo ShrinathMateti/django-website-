@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Dynamiics</title>
+    <link
+      rel="icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/294_Servicestack_logo-512.png"
+    />
+    <style>
+      #a {
+        margin-left: 210px;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "header.html" %}
+    <br />
+    <br />
+    <h3 style="text-align: center">UI UX Design</h3>
+    <div class="container mt-5 mb-4">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1000/1*Sf4vNSCX5ReJWOcaj1rI7w.jpeg"
+            alt=""
+          />
+          <h5 class="text-center">Creative UI Design</h5>
+        </div>
+        <div class="col-md-6 mt-5">
+          <p class="text-dark">
+            Our team specializes in creating unique and innovative UI designs tailored to our clients' needs. We strive for creativity in every aspect of our work, from color usage to layout and typography. With a clear understanding of user needs and market trends, we aim to design interfaces that are both visually stunning and intuitive to use. 
+          </p>
+          <a class="btn btn-info" id="a" href="{% url 'contact' %}"
+            >View UI Design Templates</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-4">
+      <div class="row">
+        <div class="col-md-6">
+          <br />
+          <p class="text-dark mt-5">
+            Our UI UX service include personalized UI design solutions to cater specifically to our clients' needs. We offer a range of custom design options to ensure that our clients receive a unique and tailored experience that is both functional and visually appealing. Our team of designers works closely with clients to create UI designs that are intuitive, easy to use, and optimized for their specific applications. 
+          </p>
+          <a class="btn btn-info" id="a" href="{% url 'contact' %}"
+            >View Custom UI Options</a
+          >
+        </div>
+        <div class="col-md-6 mt-4">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/024/775/590/original/ui-ux-design-concept-showing-people-create-custom-design-for-mobile-app-suitable-for-landing-page-ui-web-app-intro-card-editorial-flyer-and-banner-flat-illustration-vector.jpg"
+            alt=""
+          />
+          <h5 class="text-center">Custom UI Design Options</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://digitol.azureedge.net/clientsite/images/articles/article15-1.jpg"
+            alt=""
+          />
+          <h5 class="text-center">Cost Efficient UI Design</h5>
+        </div>
+        <div class="col-md-6 mt-5">
+          <p class="text-dark">
+            We offer affordable and budget-friendly UI design services that are designed to help our clients save money while still getting high-quality results. Our goal is to provide cost-efficient solutions that meet the needs and goals of our clients without sacrificing quality or functionality. We work closely with each client to understand their specific needs.
+          </p>
+          <a class="btn btn-info" id="a" href="{% url 'contact' %}"
+            >View Pricing Options</a
+          >
+        </div>
+      </div>
+    </div>
+    <center>
+      <button
+        class="btn text-light"
+        style="background-color: black"
+        data-bs-toggle="modal" data-bs-target="#exampleModal"
+        type="button"
+      >
+        <i class="fa-regular fa-envelope me-2"></i></fa-regular>
+        Download Brochure
+    </button>
+    </center>
+    <br/>
+    {% include "footer.html"%}
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

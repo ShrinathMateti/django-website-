@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Dynamiics</title>
+<link
+  rel="icon"
+  href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/294_Servicestack_logo-512.png"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous"
+/>
+<link href="/static/css/style.css" rel="stylesheet" />
+<style>
+  .deco{
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"
+      ><i class="fa-brands fa-servicestack"></i> Design Dynamiics</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="active">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href=" {% url 'home' %}"
+            >Home</a
+          >
+        </li>
+        <li class="active">
+          <a class="nav-link" href="{% url 'about' %}">About</a>
+        </li>
+        <li class="active">
+          <a class="nav-link" href="{% url 'services' %}">Services</a>
+        </li>
+        <li class="active">
+          <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex">
+      <a type="button" class="btn btn-dark" href="/enquiry/" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+        <i class="fa-solid fa-square-phone"></i> Enquire Now
+      </a>
+    </form>
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-phone-volume"></i> Get in touch with us</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formAwesome" method="POST"
+        >
+        {% csrf_token %}
+          <div class="modal-body">
+            <div class="form-group row">
+              <label for="firstName" class="col-sm-6 col-form-label">
+                Your name
+              </label>
+              <div class="col-sm-6 mb-2">
+                <input type="text" class="form-control" id="Name" name="name" placeholder="Your Name" required>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label for="email" class="col-sm-6 col-form-label">
+               Your E-mail address
+              </label>
+              <div class="col-sm-6 mb-2">
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="firstName" class="col-sm-6 col-form-label">
+                Your Mobile Number
+              </label>
+              <div class="col-sm-6 mb-2">
+                <input type="text" class="form-control" id="number" name="number" placeholder="Mobile Number" required>
+              </div>
+            </div>
+            
+          </div>
+          
+         <center>
+         <button type="submit" class="btn btn-dark">Submit</button>
+         </center>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<marquee onmouseover="stop()" onmouseout="start()" >
+  Welcome To Design Dynamiics &nbsp; &nbsp;&nbsp;<a href="/webdesignservice/"
+  class="deco">Website Design & Development</a
+  >
+  &nbsp; &nbsp;&nbsp;
+  <a href="/uiux/" class="deco">UI UX Design</a> &nbsp; &nbsp;&nbsp;
+  <a href="/appdev/" class="deco">Andriod Application</a>
+</marquee>
+</body>
+</html>

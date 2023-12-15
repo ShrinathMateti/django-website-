@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Dynamiics</title>
+    <style>
+      #para {
+        font-size: larger;
+      }
+    </style>
+    <link
+  rel="icon"
+  href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/294_Servicestack_logo-512.png"
+/>
+  </head>
+</body>
+{% include "header.html" %}
+<br />
+<br />
+{% comment %}
+<h1 style="text-align: center">About Us</h1>
+{% endcomment %}
+<h4 class="text-dark text-center">ABOUT US</h4>
+<section class="section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <img
+            alt="Web Studio"
+            class="img-fluid"
+            src="https://media.istockphoto.com/id/1214546578/photo/student-working-on-laptop-stock-photo.jpg?s=612x612&w=0&k=20&c=kwHaBP02GSR5A3T4WCcgsUOpxmDtbBx5_HMU5-2WdBE="
+          />
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0"
+      >
+        <div>{% for a in AboutData %}
+          <p class="text-dark" id="para">
+            {{a.about_desc }}
+            {% comment %} Design Dynamiics is a leading design agency, providing creative and
+              innovative solutions to businesses across various industries. Our
+              team of experienced designers & developers work collaboratively
+              with clients to create stunning visuals & interactive experiences. {% endcomment %}
+          </p>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<hr/>
+<h4 class="text-dark text-center">MEET OUR TEAM</h4>
+<section class="section mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <img
+            alt="Web Studio"
+            class="img-fluid"
+            src="https://media.istockphoto.com/id/1434742171/photo/laptop-ppt-presentation-business-meeting-and-team-working-on-review-for-new-digital-website.webp?b=1&s=170667a&w=0&k=20&c=CTuv0GsOQhhXBx7nhCghIaadrbJS9bpTdIn7zHi8xOo="
+          />
+        </div>
+      </div>
+      <div
+        class="col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0"
+      >
+        <div>{% for a in AboutData %}
+          <p class="text-dark" id="para">
+            {{a.about_team}}
+            {% comment %} We are all very different. We were born in different cities, at
+            different times, we love different music, food, movies. But we have
+            something that unites us all. It is our company. We are its heart.
+            We are not just a team, we are a family. {% endcomment %}
+          </p>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<br />
+<center>
+  <a class="btn btn-info" href="{% url 'contact' %}">Contact Us</a>
+</center>
+<br />
+<hr/>
+<h4 class="text-dark text-center">Our Team Members</h4>
+<!-- Carousel wrapper -->
+
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3 text-center">Anna Deynah</h5>
+            <p class="text-dark">UI UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              As a UI UX designer, Anna is responsible for creating visually appealing and user-friendly designs for digital products. She has a deep understanding of user research and design principles, which she uses to create intuitive interfaces that enhance the user experience. Anna has excellent communication skills.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3 text-center">John Doe</h5>
+            <p class="text-dark">Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              John is a skilled web developer with years of experience in building responsive websites. He has an extensive knowledge of HTML, CSS, JavaScript and other web technologies such as React, Angular and Vue. He is proficient in using various CMS platforms such as WordPress, Drupal and Magento. 
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3 text-center">Maria Kate</h5>
+            <p class="text-dark">App Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Maria is an experienced app developer with a passion for creating innovative and user-friendly mobile applications. Her skills include a deep understanding of various programming languages, including Java and Swift, as well as a strong grasp of UI/UX design principles. She has an  track record of building high-quality apps. 
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3 ">John Doe</h5>
+            <p>UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Alex Rey</h5>
+            <p>Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+              suscipit laboriosam, nisi ut aliquid commodi.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Maria Kate</h5>
+            <p>App Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum deleniti atque corrupti.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Anna Deynah</h5>
+            <p>UX Designer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+              officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">John Doe</h5>
+            <p>Web Developer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+              suscipit laboriosam, nisi ut aliquid commodi.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <img class="rounded-circle shadow-1-strong mb-4"
+              src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar"
+              style="width: 150px;" />
+            <h5 class="mb-3">Maria Kate</h5>
+            <p>Photographer</p>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+              praesentium voluptatum deleniti atque corrupti.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+</div>
+<!-- Carousel wrapper -->
+{% comment %} <div class="container d-flex">
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+  &nbsp; &nbsp;&nbsp;
+  <div class="card" style="width: 16rem">
+    <img
+      src="https://www.litmos.com/wp-content/uploads/2016/09/boost-creativity-in-eLearning.png"
+      class="card-img-top"
+      alt="..."
+      height="170px"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Creativity</h5>
+      <p class="card-text text-dark">
+        It's the ability to think outside the box. We make decisions, create
+        something new and generate a lot of ideas.
+      </p>
+    </div>
+  </div>
+  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+  <div class="card" style="width: 16rem">
+    <img
+      src="https://img.freepik.com/free-vector/flat-earth-day-background_23-2149314932.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Worldwide</h5>
+      <p class="card-text text-dark">
+        All sites we make mobile-friendly.You don't have to create a special
+        mobile version of your site.
+      </p>
+    </div>
+  </div>
+  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+  <div class="card" style="width: 16rem">
+    <img
+      src="https://img.freepik.com/premium-vector/smile-icon-smiling-emoticon-yellow-background_434359-65.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Unique Styles</h5>
+      <p class="card-text text-dark">
+        We offer many site blocks in several themes, and though these blocks are
+        pre-made, they are flexible.
+      </p>
+    </div>
+  </div>
+</div> {% endcomment %}
+<br />
+
+{% include "footer.html"%}
+<script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
+  
